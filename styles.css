@@ -11,6 +11,22 @@ body:after {
   border: 1px solid black;
 }
 
+
+.container + .container {
+  margin-top: 20px;
+}
+
+.thumbnail.active {
+  -webkit-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -kthtml-transition: all 1s linear;
+  transition: all 1s linear;
+  box-shadow: 10px 10px 5px #337ab7;
+  transform: scale(10%);
+}
+
 @media screen and (min-width: 768px){
   body:after {
     content: 'sm';
