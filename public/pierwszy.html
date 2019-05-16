@@ -30,8 +30,8 @@
       </button>
       <div class="collapse navbar-collapse" id="menu-container">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a class="nav-link" href="/ep2/pierwszy.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/ep2/drugi.html">Druga</a></li>
+            <li class="nav-item active"><a class="nav-link" href="./pierwszy.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./drugi.html">Druga</a></li>
         </ul>
       </div>
     </div>
@@ -72,10 +72,8 @@
       <li data-target="#karuzela" data-slide-to="2"></li>
     </ol>
   </div>
-  <textarea id="logger" class="form-control"></textarea>
-
   <div class="container">
-    <div class="row align-items-stretch">
+    <div class="row align-items-stretch mt-5">
       <div class="col-6 d-flex col-xl-3 mb-5">
         <div class="card w-100">
           <div class="card-header">
@@ -146,22 +144,6 @@
   <script type="text/javascript" src="js/jquery.slim.min.js"></script>
   <script type="text/javascript" src="js/popper.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-    function pushToLog(content){
-        current = document.getElementById('logger').value;
-        separator = current ? '\n' : '';
-   newValue = content + '\n' + current;
-        document.getElementById('logger').value = newValue;
-    };
- 
-    $('#karuzela').on('slid.bs.carousel', function(e){
-        pushToLog('zakonczono zmiane z ' + e.from + ' na ' + e.to);
-    });
- 
-    $('#karuzela').on('slide.bs.carousel', function(e){
-        pushToLog('przesuwamy slajd w kierunku ' + e.direction);
-    });
-  </script>
 </body>
 
 </html>
